@@ -1,0 +1,660 @@
+<resources>
+    <string name="app_name">Sistema clínico</string>
+
+    <!-- MainActivity -->
+    <string name="main_title">Sistema clínico digital</string>
+    <string name="main_subtitle">Selecciona el módulo que deseas utilizar</string>
+    <string name="module_hematology_title">Laboratorio hematológico</string>
+    <string name="module_hematology_desc">Analiza muestras sanguíneas y registra mediciones de glóbulos rojos y blancos.</string>
+    <string name="module_hematology_btn">Ir al laboratorio</string>
+    <string name="module_clinical_title">Expediente clínico</string>
+    <string name="module_clinical_desc">Consulta, registra y administra el historial clínico de pacientes.</string>
+    <string name="module_clinical_btn">Ver expediente</string>
+
+    <!-- HematologyMenuActivity -->
+    <string name="hematology_title">Laboratorio hematológico</string>
+    <string name="hematology_menu_subtitle">Selecciona una opción</string>
+    <string name="hematology_samples_card_title">Ejemplo de muestras hematológicas</string>
+    <string name="hematology_samples_card_desc">Selecciona entre 10 bloques de muestras procesadas para clasificar niveles de glóbulos.</string>
+    <string name="hematology_samples_btn">Ver muestras</string>
+    <string name="hematology_entry_card_title">Carga y evaluación de archivos</string>
+    <string name="hematology_entry_card_desc">Importa archivos CSV o TXT con citometrías hemáticas para evaluarlas automáticamente y guardarlas en el historial.</string>
+    <string name="hematology_entry_btn">Analizar archivo</string>
+
+    <!-- HematologySamplesActivity -->
+    <string name="hematology_samples_title">Ejemplo de muestras hematológicas</string>
+    <string name="samples_tray_title">Bandeja de ejemplos didácticos</string>
+    <string name="samples_tray_subtitle">Casos simulados con fines didácticos • 10 ejemplos</string>
+    <string name="samples_tray_desc">Selecciona un caso didáctico simulado para consultar su citometría hemática de muestra, frotis periférico y diagnóstico hematológico.</string>
+    <string name="samples_grid_title">Casos didácticos disponibles para evaluación</string>
+
+    <!-- HematologyDataEntryActivity -->
+    <string name="hematology_data_entry_title">Registro de mediciones</string>
+    <string name="data_entry_patient_section">1. Nombre del paciente</string>
+    <string name="data_entry_patient_hint">Nombre completo</string>
+    <string name="data_entry_save_patient_name">Guardar nombre</string>
+    <string name="data_entry_clear_file">Borrar archivo</string>
+    <string name="data_entry_red_cells_section">2. Mediciones glóbulos rojos (10 valores)</string>
+    <string name="data_entry_save_red_cells">Guardar G. Rojos</string>
+    <string name="data_entry_white_cells_section">3. Mediciones glóbulos blancos (10 valores)</string>
+    <string name="data_entry_save_white_cells">Guardar G. Blancos</string>
+
+    <!-- HematologyResultsActivity -->
+    <string name="hematology_results_title">Resultados del análisis</string>
+    <string name="hematology_results_batch_label">Lote evaluado</string>
+
+    <!-- ClinicalMenuActivity -->
+    <string name="clinical_title">Expediente clínico</string>
+    <string name="clinical_menu_subtitle">Selecciona una opción</string>
+    <string name="clinical_tables_card_title">Consultar tablas clínicas</string>
+    <string name="clinical_tables_card_desc">Explora el directorio de pacientes y los catálogos médicos con búsqueda en tiempo real.</string>
+    <string name="clinical_tables_btn">Ver tablas</string>
+    <string name="clinical_insert_card_title">Registrar nuevo paciente / catálogo</string>
+    <string name="clinical_insert_card_desc">Agrega nuevos registros de pacientes, alergias, muestras o tipos de cáncer a la base de datos.</string>
+    <string name="clinical_insert_btn">Registrar datos</string>
+
+    <!-- ClinicalTablesMenuActivity -->
+    <string name="clinical_tables_title">Tablas del expediente</string>
+    <string name="clinical_tables_subtitle">Selecciona una tabla a explorar</string>
+    <string name="clinical_tables_patients_sub">Expediente clínico integral y búsqueda de pacientes</string>
+    <string name="clinical_tables_patient_unified">Expediente unificado</string>
+    <string name="clinical_tables_patient_full_desc">Consulta en un solo lugar todos los datos del paciente: información general, alergias diagnosticadas, historial de glóbulos rojos/blancos y tratamientos oncológicos.</string>
+    <string name="clinical_tables_catalogs_sub">Catálogos médicos de referencia clínica</string>
+    <string name="table_patients_title">Directorio de pacientes</string>
+    <string name="table_patients_desc">Expediente unificado: datos generales, alergias, glóbulos y patologías</string>
+    <string name="table_allergies_title">Catálogo de alergias</string>
+    <string name="table_allergies_desc">Sustancias, medicamentos y descripciones clínicas</string>
+    <string name="table_patient_allergies_title">Alergias por paciente</string>
+    <string name="table_patient_allergies_desc">Historial de diagnósticos de alergia</string>
+    <string name="table_red_cells_title">Conteo de glóbulos rojos</string>
+    <string name="table_red_cells_desc">Valores y fechas de examen hematológico</string>
+    <string name="table_white_cells_title">Conteo de glóbulos blancos</string>
+    <string name="table_white_cells_desc">Exámenes inmunológicos y leucocitarios</string>
+    <string name="table_cancer_title">Catálogo oncológico</string>
+    <string name="table_cancer_desc">Tipos de neoplasias y descripciones médicas</string>
+    <string name="table_treatments_title">Tratamientos y evolución</string>
+    <string name="table_treatments_desc">Fechas de detección, terapia y resultados</string>
+    <string name="table_see_btn">Ver ➔</string>
+
+    <string name="tab_assignments">Asignaciones al paciente</string>
+    <string name="tab_catalogs">Altas y catálogos</string>
+    <string name="hematology_samples_subtitle">Lotes de muestras clínicas</string>
+    <string name="hematology_samples_intro">Selecciona cualquier lote de muestras para clasificar automáticamente los glóbulos rojos y blancos.</string>
+
+    <!-- ClinicalTableViewerActivity -->
+    <string name="table_viewer_title">Registros clínicos</string>
+    <string name="table_viewer_search_hint">Buscar en esta tabla…</string>
+    <string name="table_viewer_loading">Cargando registros…</string>
+    <string name="table_viewer_empty">No se encontraron registros que coincidan con la búsqueda.</string>
+    <string name="table_viewer_error">Error al leer los datos de la tabla.</string>
+    <string name="table_viewer_count">%d registro(s) encontrado(s)</string>
+    <string name="table_viewer_delete_title">Eliminar registro</string>
+    <string name="table_viewer_delete_message">¿Deseas eliminar el registro con %1$s = \'%2$s\'?</string>
+    <string name="table_viewer_delete_confirm">Eliminar</string>
+    <string name="table_viewer_delete_cancel">Cancelar</string>
+    <string name="table_viewer_delete_success">Registro eliminado</string>
+    <string name="table_viewer_delete_error">Error al eliminar el registro</string>
+
+    <!-- ClinicalRecordInsertActivity -->
+    <string name="insert_title">Registro clínico</string>
+    <string name="chip_patient">Nuevo paciente</string>
+    <string name="chip_blood">Muestra de glóbulos</string>
+    <string name="chip_patient_allergy">Asignar alergia</string>
+    <string name="chip_patient_cancer">Diagnóstico oncológico</string>
+    <string name="chip_allergy">Catálogo de alergias</string>
+    <string name="chip_cancer">Catálogo oncológico</string>
+
+    <!-- Patient form -->
+    <string name="patient_form_title">Alta de nuevo paciente</string>
+    <string name="patient_code_hint">Clave paciente</string>
+    <string name="patient_name_hint">Nombre(s)</string>
+    <string name="patient_lastname_father_hint">Apellido paterno</string>
+    <string name="patient_lastname_mother_hint">Apellido materno</string>
+    <string name="patient_weight_hint">Peso (kg)</string>
+    <string name="patient_height_hint">Estatura (m)</string>
+    <string name="patient_blood_type_hint">Tipo de sangre (ej: O+)</string>
+    <string name="patient_birthdate_hint">Fecha de nacimiento (DD/MM/AAAA)</string>
+    <string name="patient_save_btn">Guardar paciente</string>
+
+    <!-- Patient Allergy Assignment Form -->
+    <string name="patient_allergy_form_title">Asignar alergia a paciente</string>
+    <string name="patient_select_hint">Seleccionar paciente</string>
+    <string name="allergy_select_hint">Seleccionar alergia del catálogo</string>
+    <string name="patient_allergy_date_hint">Fecha del diagnóstico (DD/MM/AAAA)</string>
+    <string name="patient_allergy_save_btn">Asignar alergia al paciente</string>
+
+    <!-- Patient Cancer / Oncology Assignment Form -->
+    <string name="patient_cancer_form_title">Diagnóstico oncológico a paciente</string>
+    <string name="cancer_select_hint">Seleccionar tipo de cáncer</string>
+    <string name="cancer_result_hint">Resultado del diagnóstico (ej: Positivo)</string>
+    <string name="cancer_detect_date_hint">Fecha detectada (DD/MM/AAAA)</string>
+    <string name="cancer_start_date_hint">Fecha inicio tratamiento (DD/MM/AAAA)</string>
+    <string name="cancer_end_date_hint">Fecha final tratamiento (DD/MM/AAAA)</string>
+    <string name="patient_cancer_save_btn">Guardar diagnóstico en expediente</string>
+
+    <!-- Allergy form -->
+    <string name="allergy_form_title">Alta de nueva alergia al catálogo</string>
+    <string name="allergy_code_hint">Clave alergia</string>
+    <string name="allergy_name_hint">Nombre de la alergia (ej: Penicilina)</string>
+    <string name="allergy_desc_hint">Descripción clínica / síntomas</string>
+    <string name="allergy_save_btn">Guardar alergia en catálogo</string>
+
+    <!-- Blood test form -->
+    <string name="blood_form_title">Muestra de glóbulos para paciente</string>
+    <string name="blood_chip_red">Glóbulos rojos (GR)</string>
+    <string name="blood_chip_white">Glóbulos blancos (GB)</string>
+    <string name="blood_op_no_hint">No. Operación</string>
+    <string name="blood_patient_code_hint">Seleccionar paciente</string>
+    <string name="blood_count_hint">Cantidad de glóbulos</string>
+    <string name="blood_date_hint">Fecha de operación (DD/MM/AAAA)</string>
+    <string name="blood_save_btn">Guardar muestra</string>
+
+    <!-- Cancer form -->
+    <string name="cancer_form_title">Alta de nuevo tipo de cáncer al catálogo</string>
+    <string name="cancer_code_hint">Clave cáncer</string>
+    <string name="cancer_name_hint">Nombre del tipo de cáncer</string>
+    <string name="cancer_desc_hint">Descripción / características médicas</string>
+    <string name="cancer_save_btn">Guardar tipo de cáncer en catálogo</string>
+
+    <string name="section_patients">Pacientes</string>
+    <string name="section_catalogs">Catálogos</string>
+
+    <string name="table_viewer_detail_title">Detalle del registro</string>
+    <string name="table_viewer_delete_confirm_msg">¿Deseas eliminar este registro permanentemente? Esta acción no se puede deshacer.</string>
+    <string name="table_viewer_tap_hint">Toca una fila para ver el detalle completo</string>
+    <string name="table_viewer_modify_btn">MODIFICAR REGISTRO DEL CATÁLOGO</string>
+    <string name="table_viewer_delete_catalog_btn">ELIMINAR REGISTRO DEL CATÁLOGO</string>
+
+    <!-- Patient Directory -->
+    <string name="patient_search_hint">Buscar por nombre, clave o tipo de sangre…</string>
+    <string name="sort_oldest_first">Más antiguos primero</string>
+    <string name="sort_newest_first">Más recientes primero</string>
+    <string name="sort_name_az">Nombre (A - Z)</string>
+    <string name="patient_empty_search">No se encontraron pacientes que coincidan con la búsqueda.</string>
+
+    <!-- Patient Detail -->
+    <string name="detail_blood_type_label">Tipo de sangre</string>
+    <string name="detail_weight_label">Peso</string>
+    <string name="detail_height_label">Estatura</string>
+    <string name="detail_birthdate_label">F. Nacimiento</string>
+    <string name="detail_allergies_title">Alergias diagnosticadas</string>
+    <string name="detail_empty_allergies">(Ninguna alergia registrada para este paciente)</string>
+    <string name="detail_blood_samples_title">Muestras hematológicas</string>
+    <string name="detail_empty_blood_samples">(Sin muestras registradas para este paciente)</string>
+    <string name="detail_oncology_title">Patologías y tratamientos oncológicos</string>
+    <string name="detail_empty_oncology">(Sin diagnósticos ni tratamientos oncológicos registrados)</string>
+    <string name="detail_edit_btn">Editar datos del paciente</string>
+    <string name="detail_delete_btn">Eliminar este paciente del expediente</string>
+
+    <!-- Edit Hub -->
+    <string name="hub_title">Gestión del expediente</string>
+    <string name="hub_subtitle">Selecciona el área que deseas modificar</string>
+    <string name="hub_general_title">Datos generales y biometría</string>
+    <string name="hub_general_desc">Nombre, medidas de peso, estatura, tipo de sangre y fecha de nacimiento</string>
+    <string name="hub_allergies_title">Alergias diagnosticadas</string>
+    <string name="hub_allergies_desc">Severidad, reacción sintomática y tratamientos de rescate</string>
+    <string name="hub_blood_title">Muestras hematológicas</string>
+    <string name="hub_blood_desc">Conteo de glóbulos rojos (GR) y glóbulos blancos (GB)</string>
+    <string name="hub_oncology_title">Patologías y tratamientos</string>
+    <string name="hub_oncology_desc">Diagnósticos oncológicos y fechas de evolución clínica</string>
+    <string name="hub_close_btn">Cerrar</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_select_title">Seleccionar elemento</string>
+    <string name="dialog_select_sub">Selecciona un registro para continuar</string>
+    <string name="dialog_cancel_btn">Cancelar</string>
+    <string name="dialog_save_btn">Guardar cambios</string>
+    <string name="dialog_blood_count_hint">Cantidad de glóbulos (cél/µL)</string>
+    <string name="dialog_blood_date_hint">Fecha de toma (DD/MM/AAAA)</string>
+    <string name="dialog_allergy_severity_hint">Nivel de severidad</string>
+    <string name="dialog_allergy_symptoms_hint">Reacción / Síntomas específicos en el paciente</string>
+    <string name="dialog_allergy_rescue_hint">Protocolo de rescate o emergencia</string>
+    <string name="dialog_allergy_date_hint">Fecha de diagnóstico (DD/MM/AAAA)</string>
+    <string name="dialog_cancer_result_hint">Resultado del diagnóstico</string>
+    <string name="dialog_cancer_detect_hint">Fecha de detección (DD/MM/AAAA)</string>
+    <string name="dialog_cancer_start_hint">Fecha inicio tratamiento (DD/MM/AAAA)</string>
+    <string name="dialog_cancer_end_hint">Fecha fin tratamiento (DD/MM/AAAA)</string>
+
+    <!-- Sexo del Paciente -->
+    <string name="detail_sex_label">Sexo</string>
+    <string name="sex_male">Masculino (M)</string>
+    <string name="sex_female">Femenino (F)</string>
+
+    <!-- Biometría Hemática Completa -->
+    <string name="biometria_title">Biometría hemática completa</string>
+    <string name="biometria_empty">(Sin biometrías hemáticas completas registradas)</string>
+    <string name="biometria_study_label">Estudio: </string>
+    <string name="biometria_serie_red">Serie roja (eritroide)</string>
+    <string name="biometria_serie_white">Serie blanca (leucocitaria)</string>
+    <string name="biometria_serie_platelets">Plaquetas (hemostasia)</string>
+    <string name="biometria_traceability_title">Control de calidad y trazabilidad</string>
+    <string name="biometria_diagnosis_title">Interpretación clínica automatizada</string>
+
+    <string name="bio_rbc">Eritrocitos (RBC)</string>
+    <string name="bio_rbc_unit">×10⁶/µL</string>
+    <string name="bio_rbc_ref_male">Ref: 4.7 – 6.1</string>
+    <string name="bio_rbc_ref_female">Ref: 4.2 – 5.4</string>
+
+    <string name="bio_hb">Hemoglobina (Hb)</string>
+    <string name="bio_hb_unit">g/dL</string>
+    <string name="bio_hb_ref_male">Ref: 13.8 – 17.5</string>
+    <string name="bio_hb_ref_female">Ref: 12.0 – 15.5</string>
+
+    <string name="bio_hct">Hematocrito (Hct)</string>
+    <string name="bio_hct_unit">%</string>
+    <string name="bio_hct_ref_male">Ref: 42.0 – 52.0</string>
+    <string name="bio_hct_ref_female">Ref: 37.0 – 47.0</string>
+
+    <string name="bio_vcm">Vol. Corpuscular (VCM)</string>
+    <string name="bio_vcm_unit">fL</string>
+    <string name="bio_vcm_ref">Ref: 80.0 – 100.0</string>
+
+    <string name="bio_hcm">Hb Corpuscular (HCM)</string>
+    <string name="bio_hcm_unit">pg</string>
+    <string name="bio_hcm_ref">Ref: 27.0 – 33.0</string>
+
+    <string name="bio_chcm">Conc. Media Hb (CHCM)</string>
+    <string name="bio_chcm_unit">g/dL</string>
+    <string name="bio_chcm_ref">Ref: 32.0 – 36.0</string>
+
+    <string name="bio_wbc">Leucocitos (WBC)</string>
+    <string name="bio_wbc_unit">×10³/µL</string>
+    <string name="bio_wbc_ref">Ref: 4.5 – 11.0</string>
+
+    <string name="bio_neut">Neutrófilos</string>
+    <string name="bio_neut_unit">%</string>
+    <string name="bio_neut_ref">Ref: 45 – 70</string>
+
+    <string name="bio_linf">Linfocitos</string>
+    <string name="bio_linf_unit">%</string>
+    <string name="bio_linf_ref">Ref: 20 – 45</string>
+
+    <string name="bio_mono">Monocitos</string>
+    <string name="bio_mono_unit">%</string>
+    <string name="bio_mono_ref">Ref: 2 – 10</string>
+
+    <string name="bio_eos">Eosinófilos</string>
+    <string name="bio_eos_unit">%</string>
+    <string name="bio_eos_ref">Ref: 1 – 4</string>
+
+    <string name="bio_plt">Plaquetas (PLT)</string>
+    <string name="bio_plt_unit">×10³/µL</string>
+    <string name="bio_plt_ref">Ref: 150 – 450</string>
+
+    <string name="bio_folio_label">Folio de estudio:</string>
+    <string name="bio_sample_label">Tipo de muestra:</string>
+    <string name="bio_responsible_label">Validado por:</string>
+    <string name="bio_frotis_label">Frotis sanguíneo:</string>
+
+    <string name="status_normal">Normal</string>
+    <string name="status_low">Bajo</string>
+    <string name="status_high">Elevado</string>
+
+    <string name="chip_biometria">Hemograma integral</string>
+    <string name="biometria_form_title">Alta de biometría hemática completa</string>
+    <string name="biometria_save_btn">Guardar biometría hemática</string>
+
+    <!-- Direct Patient Assignment in Expediente -->
+    <string name="detail_assign_data_btn">Asignar datos al expediente</string>
+    <string name="detail_assign_dialog_title">Asignar datos al paciente</string>
+    <string name="detail_assign_biometria">Biometría hemática completa</string>
+    <string name="detail_assign_allergy">Alergia clínica</string>
+    <string name="detail_assign_cancer">Diagnóstico oncológico</string>
+    <string name="detail_add_short">+ Asignar</string>
+    <string name="detail_add_biometria_short">+ Registrar</string>
+
+    <!-- Common -->
+    <string name="nav_back">Volver</string>
+    <string name="zero_records">0 registros</string>
+<!-- Dialog Texts & Action Messages -->
+    <string name="dialog_confirm_delete_title">Confirmar eliminación</string>
+    <string name="dialog_delete_confirm_btn">Eliminar</string>
+    <string name="dialog_delete_definitively_btn">Eliminar definitivamente</string>
+    <string name="dialog_delete_patient_expediente_title">Confirmar eliminación de expediente</string>
+    <string name="dialog_delete_patient_expediente_msg">¿Deseas eliminar definitivamente el expediente completo de %1$s? Esta acción borrará todas sus alergias, biometrías hemáticas y tratamientos oncológicos asociados de forma permanente.</string>
+    <string name="dialog_delete_allergy_msg">¿Deseas desvincular la alergia %1$s de este paciente?</string>
+    <string name="dialog_delete_cancer_msg">¿Deseas desvincular la patología %1$s de este paciente?</string>
+    <string name="dialog_delete_biometria_msg">¿Deseas eliminar permanentemente esta biometría hemática?</string>
+    <string name="dialog_delete_history_file_msg">¿Deseas eliminar el registro del análisis del archivo %1$s?</string>
+
+    <string name="toast_expediente_updated">Expediente actualizado correctamente</string>
+    <string name="toast_expediente_update_error">Error al actualizar expediente</string>
+    <string name="toast_patient_name_required">Por favor ingresa al menos el nombre del paciente</string>
+    <string name="toast_patient_required_fields">Por favor ingresa nombre y apellido paterno</string>
+    <string name="toast_patient_registered">Paciente registrado correctamente (%1$s)</string>
+    <string name="toast_patient_register_error">Error al registrar el paciente</string>
+    <string name="toast_patient_deleted">Expediente de %1$s eliminado</string>
+    <string name="toast_patient_delete_error">Error al eliminar expediente</string>
+
+    <string name="toast_allergy_updated">Alergia actualizada</string>
+    <string name="toast_allergy_update_error">Error al actualizar alergia</string>
+    <string name="toast_allergy_unlinked">Alergia desvinculada</string>
+    <string name="toast_allergy_assigned">Alergia asignada al expediente</string>
+    <string name="toast_allergy_assign_error">Error al asignar alergia</string>
+    <string name="toast_allergy_select_required">Selecciona una alergia del catálogo</string>
+    <string name="toast_no_allergies_registered">El paciente no tiene alergias registradas</string>
+
+    <string name="toast_biometria_updated">Biometría hemática actualizada</string>
+    <string name="toast_biometria_update_error">Error al actualizar biometría</string>
+    <string name="toast_biometria_deleted">Biometría hemática eliminada</string>
+    <string name="toast_biometria_assigned">Biometría registrada en el expediente</string>
+    <string name="toast_biometria_assign_error">Error al registrar biometría</string>
+    <string name="toast_biometria_date_required">Ingresa la fecha del estudio</string>
+    <string name="toast_biometria_values_required">Ingresa los valores principales (RBC, Hb, WBC, PLT)</string>
+    <string name="toast_no_biometrias_registered">El paciente no tiene biometrías hemáticas registradas</string>
+
+    <string name="toast_cancer_updated">Diagnóstico oncológico actualizado</string>
+    <string name="toast_cancer_update_error">Error al actualizar diagnóstico</string>
+    <string name="toast_cancer_unlinked">Patología desvinculada</string>
+    <string name="toast_cancer_assigned">Diagnóstico asignado al expediente</string>
+    <string name="toast_cancer_assign_error">Error al asignar diagnóstico</string>
+    <string name="toast_cancer_select_required">Selecciona un tipo de cáncer del catálogo</string>
+    <string name="toast_no_cancer_registered">El paciente no tiene patologías registradas</string>
+
+    <string name="dialog_select_allergy_to_modify">Selecciona la alergia que deseas modificar o desvincular</string>
+    <string name="dialog_select_biometria_to_modify">Selecciona el estudio que deseas modificar o dar de baja</string>
+    <string name="dialog_select_cancer_to_modify">Selecciona el diagnóstico que deseas modificar o desvincular</string>
+
+    <string name="dialog_catalog_add_allergy_title">Alta de nueva alergia</string>
+    <string name="dialog_catalog_add_allergy_sub">Registra un nuevo alérgeno en el catálogo</string>
+    <string name="dialog_catalog_add_allergy_hint">Nombre del alérgeno (ej: Penicilina, Mariscos)</string>
+    <string name="dialog_catalog_add_cancer_title">Alta de patología oncológica</string>
+    <string name="dialog_catalog_add_cancer_sub">Registra un nuevo tipo de cáncer en el catálogo</string>
+    <string name="dialog_catalog_add_cancer_hint">Tipo de cáncer o neoplasia (ej: Leucemia Mieloide)</string>
+    <string name="dialog_catalog_desc_hint">Descripción médica / características clínicas</string>
+
+    <string name="toast_catalog_name_required">Por favor ingresa el nombre</string>
+    <string name="toast_catalog_saved">Registro guardado en el catálogo (%1$s)</string>
+    <string name="toast_catalog_save_error">Error al guardar registro en catálogo</string>
+    <string name="toast_catalog_updated">Catálogo actualizado correctamente</string>
+    <string name="toast_catalog_update_error">Error al actualizar registro</string>
+    <string name="toast_catalog_empty">No hay registros en el catálogo</string>
+    <string name="dialog_catalog_select_delete">Selecciona la %1$s que deseas dar de baja</string>
+    <string name="dialog_catalog_select_edit">Selecciona la %1$s que deseas actualizar</string>
+
+    <string name="toast_file_no_recent_analysis">No hay ningún análisis reciente para vincular</string>
+    <string name="toast_file_empty">El archivo seleccionado está vacío</string>
+    <string name="toast_file_analysis_completed">Análisis completado. Copia guardada en Descargas/Casos Clinicos/%1$s</string>
+    <string name="toast_file_parse_error">No se pudieron interpretar los datos. Revisa la guía de formato.</string>
+    <string name="toast_file_read_error">Error al leer el archivo: %1$s</string>
+    <string name="toast_analysis_assigned_to_patient">Análisis vinculado exitosamente al expediente de %1$s</string>
+    <string name="toast_analysis_assign_error">Error al vincular análisis al paciente</string>
+    <string name="toast_analysis_deleted">Registro de análisis eliminado</string>
+    <string name="toast_analysis_delete_error">Error al eliminar análisis</string>
+<!-- Additional Localized Texts -->
+    <string name="toast_patient_not_found">No se encontró el expediente del paciente</string>
+    <string name="toast_loading_expediente">Cargando expediente…</string>
+    <string name="toast_no_sample_data">No se recibieron datos de la muestra</string>
+    <string name="toast_pdf_generate_error">Error al generar PDF: %1$s</string>
+    <string name="toast_no_patients_in_system">No hay pacientes registrados en el sistema</string>
+    <string name="toast_analysis_history_deleted">Registro y copia de %1$s eliminados del historial</string>
+    <string name="dialog_delete_history_detail_msg">¿Estás seguro de que deseas eliminar permanentemente el registro de análisis de %1$s (Folio: %2$s)?
+
+Esta acción eliminará el registro y la copia guardada en la carpeta Casos Clínicos, sin modificar tu archivo original.</string>
+    <string name="dialog_assign_patient_title">Vincular a Expediente</string>
+    <string name="dialog_assign_patient_sub">Selecciona el paciente al que deseas asignar los datos de %1$s (%2$s)</string>
+    <string name="dialog_catalog_delete_msg">¿Estás seguro de que deseas eliminar permanentemente el registro %1$s? Esta acción no se puede deshacer.</string>
+    <string name="dialog_catalog_delete_success">Registro %1$s eliminado correctamente</string>
+<!-- Additional Title & Toast Strings -->
+    <string name="dialog_catalog_edit_allergy_title">Modificar alergia del catálogo</string>
+    <string name="dialog_catalog_edit_allergy_sub">Actualiza los datos del alérgeno registrado</string>
+    <string name="dialog_catalog_edit_cancer_title">Modificar tipo de cáncer</string>
+    <string name="dialog_catalog_edit_cancer_sub">Actualiza los datos de la neoplasia registrada</string>
+    <string name="toast_pdf_saved_location">Guardado en: Descargas/Casos Clinicos/expedientes/%1$s/%2$s</string>
+    <string name="toast_file_template_saved_location">Guardado en: Descargas/Casos Clinicos/%1$s/%2$s</string>
+    <string name="dialog_edit_allergy_title_format">Alergia: %1$s</string>
+    <string name="dialog_edit_cancer_title_format">Patología: %1$s</string>
+    <string name="dialog_edit_biometria_title_format">Biometría hemática • Paciente %1$s</string>
+    <string name="dialog_register_biometria_title_format">Registrar biometría • %1$s</string>
+    <string name="dialog_assign_allergy_title_format">Asignar alergia • %1$s</string>
+    <string name="dialog_assign_cancer_title_format">Asignar diagnóstico • %1$s</string>
+
+    <string name="dialog_add_patient_sub">Ingresa los datos generales para el expediente</string>
+    <string name="dialog_sex_label">Sexo biológico</string>
+    <string name="dialog_add_patient_allergy_title">Asignar alergia al expediente</string>
+    <string name="dialog_add_patient_allergy_sub">Selecciona el alérgeno y datos clínicos</string>
+    <string name="dialog_allergy_severity_label">Nivel de severidad / riesgo</string>
+    <string name="dialog_allergy_symptoms_label">Reacción / síntomas en este paciente</string>
+    <string name="dialog_allergy_rescue_label">Tratamiento de rescate sugerido</string>
+    <string name="dialog_add_patient_cancer_title">Asignar diagnóstico oncológico</string>
+    <string name="dialog_add_patient_cancer_sub">Selecciona la patología y fechas de evolución</string>
+    <string name="dialog_assign_choice_biometria_sub">Eritrocitos, hemoglobina, leucocitos, plaquetas</string>
+    <string name="dialog_assign_choice_allergy_sub">Sustancia, severidad, reacción y rescate</string>
+    <string name="dialog_assign_choice_cancer_sub">Tipo de neoplasia, detección y tratamiento</string>
+    <string name="dialog_confirm_destructive_sub">Confirmación de acción destructiva</string>
+    <string name="dialog_confirm_delete_history_msg">¿Estás seguro de que deseas eliminar permanentemente este registro de análisis del historial? Esta acción no se puede deshacer.</string>
+    <string name="dialog_edit_biometria_title">Biometría hemática completa</string>
+    <string name="dialog_edit_biometria_sub">Serie eritroide, leucocitaria y plaquetaria</string>
+    <string name="dialog_edit_biometria_folio_hint">Folio (ej: BH-001)</string>
+    <string name="dialog_edit_biometria_date_hint">Fecha (DD/MM/AAAA)</string>
+    <string name="dialog_edit_biometria_rbc_hint">RBC (10⁶/µL)</string>
+    <string name="dialog_edit_biometria_hb_hint">Hb (g/dL)</string>
+    <string name="dialog_edit_biometria_hct_hint">Hematocrito (%) [Auto]</string>
+    <string name="dialog_edit_biometria_vcm_hint">VCM (fL) [Auto]</string>
+    <string name="dialog_edit_biometria_hcm_hint">HCM (pg) [Auto]</string>
+    <string name="dialog_edit_biometria_chcm_hint">CHCM (g/dL) [Auto]</string>
+    <string name="dialog_edit_biometria_wbc_hint">Leucocitos totales WBC (10³/µL)</string>
+    <string name="dialog_edit_biometria_neut_hint">Neutrófilos (%)</string>
+    <string name="dialog_edit_biometria_linf_hint">Linfocitos (%)</string>
+    <string name="dialog_edit_biometria_mono_hint">Monocitos (%)</string>
+    <string name="dialog_edit_biometria_eos_hint">Eosinófilos (%)</string>
+    <string name="dialog_edit_biometria_plt_hint">Plaquetas PLT (10³/µL)</string>
+    <string name="dialog_edit_biometria_trace_title">Control y trazabilidad</string>
+    <string name="dialog_edit_biometria_sample_hint">Tipo de muestra (opcional)</string>
+    <string name="dialog_edit_biometria_resp_hint">Químico / patólogo responsable (opcional)</string>
+    <string name="dialog_edit_biometria_frotis_hint">Frotis sanguíneo periférico (opcional)</string>
+    <string name="dialog_edit_biometria_diag_hint">Diagnóstico / observación clínica (opcional)</string>
+    <string name="dialog_edit_catalog_title">Editar catálogo</string>
+    <string name="dialog_edit_catalog_sub">Información del registro en el catálogo general</string>
+    <string name="dialog_edit_catalog_code_hint">Clave (auto-generada)</string>
+    <string name="dialog_edit_catalog_name_hint">Nombre del alérgeno o patología</string>
+    <string name="dialog_edit_catalog_category_hint">Categoría de alérgeno</string>
+    <string name="dialog_edit_catalog_desc_hint">Descripción médica general</string>
+    <string name="dialog_edit_catalog_save_btn">Guardar en catálogo</string>
+    <string name="dialog_edit_patient_title">Editar datos del paciente</string>
+    <string name="dialog_edit_allergy_title">Editar alergia clínica</string>
+    <string name="dialog_edit_allergy_sub">Modificar severidad, reacción y rescate</string>
+    <string name="dialog_edit_cancer_title">Editar diagnóstico oncológico</string>
+    <string name="dialog_edit_cancer_sub">Modificar resultado y fechas de evolución</string>
+    <string name="dialog_file_results_title">Resultados de la citometría:</string>
+    <string name="dialog_file_diag_title">Diagnóstico e interpretación clínica:</string>
+    <string name="dialog_file_link_btn">Vincular a expediente de paciente</string>
+    <string name="dialog_guide_title">Guía de formatos y ejemplos</string>
+    <string name="dialog_guide_sub">Estructura requerida para Excel (.CSV) y Bloc de notas (.TXT)</string>
+    <string name="dialog_guide_csv_title">1. Si usas Excel (archivo .CSV)</string>
+    <string name="dialog_guide_csv_desc">Crea una tabla con las siguientes columnas y guárdala como archivo .CSV:</string>
+    <string name="dialog_guide_csv_btn">Descargar ejemplo en .CSV</string>
+    <string name="dialog_guide_txt_title">2. Si usas Bloc de Notas (archivo .TXT)</string>
+    <string name="dialog_guide_txt_desc">Escribe cada dato en un renglón independiente con el formato CLAVE = VALOR:</string>
+    <string name="dialog_guide_txt_btn">Descargar ejemplo en .TXT</string>
+    <string name="dialog_guide_fields_title">Significado de los campos:</string>
+    <string name="dialog_guide_fields_desc" formatted="false">• FOLIO: Identificador o número de muestra\n• FECHA: Fecha del estudio (DD/MM/AAAA)\n• RBC: Glóbulos rojos (millones/µL)\n• HB: Hemoglobina (g/dL)\n• HCT: Hematocrito (%)\n• WBC: Glóbulos blancos (miles/µL)\n• NEUT: Porcentaje de neutrófilos (%)\n• LINF: Porcentaje de linfocitos (%)\n• PLT: Recuento de plaquetas (/µL)</string>
+    <string name="dialog_guide_note">Nota: Los índices VCM, HCM, CHCM y el diagnóstico clínico se calculan automáticamente al procesar el archivo.</string>
+    <string name="dialog_actions_title">Gestión del expediente</string>
+    <string name="dialog_actions_assign_title">Asignar datos al expediente</string>
+    <string name="dialog_actions_assign_sub">Biometría hemática, alergia o diagnóstico</string>
+    <string name="dialog_actions_edit_title">Editar datos del paciente</string>
+    <string name="dialog_actions_edit_sub">Modificar nombre, medidas, tipo de sangre</string>
+    <string name="dialog_actions_delete_title">Eliminar paciente del expediente</string>
+    <string name="dialog_actions_delete_sub">Borrar expediente y registros asociados</string>
+    <string name="dialog_save_in_expediente_btn">Guardar en expediente</string>
+    <string name="dialog_delete_catalog_action">Eliminar del catálogo</string>
+    <string name="form_allergy_category_hint">Categoría (selecciona o escribe una propia)</string>
+    <string name="form_patient_allergy_rescue_hint">Tratamiento de rescate sugerido (ej: Epinefrina 0.3mg)</string>
+
+<!-- Formatting & Dynamic Label Strings -->
+    <string name="patient_code_label_format">Clave: %1$s</string>
+    <string name="patient_detail_code_label_format">Clave de paciente: %1$s</string>
+    <string name="patient_blood_badge_format">Tipo %1$s</string>
+    <string name="patient_weight_height_format">Peso: %1$s  •  Estatura: %2$s</string>
+    <string name="patient_birthdate_format">Nacimiento: %1$s</string>
+    <string name="patient_age_format">%1$s (%2$d años)</string>
+
+    <string name="allergy_diagnosis_date_format">Fecha de diagnóstico: %1$s</string>
+    <string name="allergy_date_short_format">Fecha: %1$s</string>
+    <string name="oncology_detected_date_format">• Fecha detectada: %1$s</string>
+    <string name="oncology_period_format">• Período de tratamiento: %1$s - %2$s</string>
+    <string name="oncology_detect_short_format">Detectado: %1$s</string>
+    <string name="oncology_start_short_format">Inicio: %1$s</string>
+
+    <string name="biometria_study_num_format">Estudio #%1$d (%2$s)</string>
+    <string name="biometria_study_num_dot_format">Estudio #%1$d • %2$s</string>
+    <string name="biometria_hb_format">Hb: %1$s g/dL</string>
+    <string name="biometria_summary_metrics_format">RBC: %1$s M/µL  •  WBC: %2$s K/µL  •  PLT: %3$s K/µL</string>
+
+    <string name="hub_summary_no_allergies">Sin alergias registradas</string>
+    <string name="hub_summary_allergies_count">%1$d alergia(s) diagnosticada(s)</string>
+    <string name="hub_summary_no_biometrias">Sin biometrías registradas</string>
+    <string name="hub_summary_biometrias_count">%1$d biometría(s) hemática(s) registrada(s)</string>
+    <string name="hub_summary_no_cancer">Sin patologías registradas</string>
+    <string name="hub_summary_cancer_count">%1$d patología(s) oncológica(s)</string>
+
+    <string name="file_analyzed_timestamp_format">Analizado: %1$s • Folio: %2$s</string>
+    <string name="file_history_count_format">%1$d análisis</string>
+    <string name="file_history_metrics_format">RBC: %1$s • Hb: %2$s • WBC: %3$s • PLT: %4$s</string>
+    <string name="file_history_diagnosis_format">Diagnóstico: %1$s</string>
+    <string name="file_history_orig_name_format">Archivo original: %1$s</string>
+
+    <string name="sample_header_title_format">Tubo #%1$d • Folio: %2$s</string>
+    <string name="sample_header_sub_format">%1$s • %2$s</string>
+    <string name="sample_diag_frotis_format">%1$s
+
+Frotis sanguíneo periférico: %2$s</string>
+
+    <string name="pdf_chooser_title">Abrir expediente con:</string>
+    <string name="pdf_header_title">SISTEMA CLÍNICO DIGITAL — EXPEDIENTE MÉDICO INTEGRAL</string>
+    <string name="pdf_header_issued_date">Reporte emitido el: %1$s  •  Confidencialidad Médica</string>
+    <string name="pdf_header_expediente_format">EXPEDIENTE: %1$s (%2$s)</string>
+    <string name="pdf_section_patient_general_title">DATOS GENERALES DEL PACIENTE</string>
+    <string name="pdf_field_clave_folio">Clave / Folio:</string>
+    <string name="pdf_field_blood_type">Tipo de Sangre:</string>
+    <string name="pdf_field_full_name">Nombre Completo:</string>
+    <string name="pdf_field_sex">Sexo / Género:</string>
+    <string name="pdf_field_birthdate">Fecha Nacimiento:</string>
+    <string name="pdf_field_weight_height">Peso y Estatura:</string>
+    <string name="pdf_section_allergies_title">1. CATÁLOGO DE ALERGIAS DIAGNOSTICADAS (%1$d)</string>
+    <string name="pdf_empty_allergies">No cuenta con alergias diagnosticadas registradas en el expediente.</string>
+    <string name="pdf_th_clave">CLAVE</string>
+    <string name="pdf_th_substance">SUSTANCIA / MEDICAMENTO</string>
+    <string name="pdf_th_category">CATEGORÍA / SEVERIDAD</string>
+    <string name="pdf_th_diag_date">FECHA DIAGNÓSTICO</string>
+    <string name="pdf_section_biometrias_title">2. BIOMETRÍAS HEMÁTICAS Y CITOMETRÍAS (%1$d)</string>
+    <string name="pdf_empty_biometrias">Sin exámenes de biometría hemática registrados en el expediente.</string>
+    <string name="pdf_biometria_folio_date_format">Folio: %1$s  •  Fecha: %2$s</string>
+    <string name="pdf_diag_default">Evaluación hematológica realizada.</string>
+    <string name="pdf_interpretation_format">Interpretación: %1$s</string>
+    <string name="pdf_section_oncology_title">3. HISTORIAL Y TRATAMIENTOS ONCOLÓGICOS (%1$d)</string>
+    <string name="pdf_empty_oncology">No registra antecedentes ni tratamientos oncológicos en el expediente.</string>
+    <string name="pdf_th_cancer_type">TIPO DE CÁNCER</string>
+    <string name="pdf_th_detection">DETECCIÓN</string>
+    <string name="pdf_th_start_treatment">INICIO TRAT.</string>
+    <string name="pdf_th_results">RESULTADOS</string>
+    <string name="pdf_in_followup">En seguimiento</string>
+    <string name="pdf_footer_confidential">Sistema Clínico Digital • Documento médico oficial confidencial</string>
+    <string name="pdf_footer_page_format">Página %1$d</string>
+
+<!-- Standard Option Arrays -->
+    <string-array name="allergy_severities">
+        <item>Leve</item>
+        <item>Moderada</item>
+        <item>Severa (Anafilaxia)</item>
+    </string-array>
+
+    <string-array name="oncology_results">
+        <item>Positivo</item>
+        <item>Negativo</item>
+    </string-array>
+
+<!-- Additional Formatting & Dialog Title Strings -->
+    <string name="records_count_format">%1$d registros encontrados</string>
+    <string name="dialog_catalog_delete_allergy_title">Eliminar alergia del catálogo</string>
+    <string name="dialog_catalog_delete_cancer_title">Eliminar tipo de cáncer</string>
+    <string name="dialog_patient_sub_format">%1$s (%2$s)</string>
+    <string name="dialog_patient_sub_dot_format">%1$s • %2$s</string>
+    <string name="table_allergies_singular">alergia</string>
+    <string name="table_cancer_singular">patología oncológica</string>
+
+    <string-array name="allergy_categories">
+        <item>Medicamento</item>
+        <item>Alimento</item>
+        <item>Ambiental</item>
+        <item>Insecto</item>
+        <item>Contacto</item>
+        <item>Otro</item>
+    </string-array>
+
+<!-- Patient Delete Dialog Detail Strings -->
+    <string name="dialog_delete_patient_detail_confirm_msg">¿Estás seguro de que deseas eliminar permanentemente el expediente de %1$s (%2$s)?
+
+Esta acción es irreversible y borrará:</string>
+    <string name="dialog_delete_patient_item_personal">• Datos personales y medidas biométricas</string>
+    <string name="dialog_delete_patient_item_allergies">• %1$d alergia(s) diagnosticada(s)</string>
+    <string name="dialog_delete_patient_item_blood">• %1$d muestra(s) hematológica(s)</string>
+    <string name="dialog_delete_patient_item_cancer">• %1$d patología(s) oncológica(s)</string>
+    <string name="default_patient_fallback_name">Paciente</string>
+    <string name="default_evaluated_status">Evaluado</string>
+
+<string name="default_severity_moderate">Moderada</string>
+    <string name="default_result_positive">Positivo</string>
+
+<!-- PatientDetail and Hematology Additional Strings -->
+    <string name="bio_default_normal_interpretation">Biometría hemática completa en rangos normales de referencia.</string>
+    <string name="allergy_reaction_prefix">• Reacción en este paciente: </string>
+    <string name="allergy_rescue_prefix">• Tratamiento de rescate: </string>
+    <string name="gender_female">Mujer</string>
+    <string name="gender_male">Hombre</string>
+    <string name="biometria_serie_red_gender_format">%1$s (%2$s)</string>
+    <string name="oncology_period_to_format">• Período de tratamiento: %1$s al %2$s</string>
+
+    <string name="btn_link_patient">Vincular a paciente</string>
+    <string name="btn_reassign">Reasignar</string>
+    <string name="btn_see_details">Ver detalles</string>
+    <string name="file_history_linked_format">👤 Vinculado a: %1$s</string>
+    <string name="btn_assign_bio_and_diag">Asignar biometría y diagnóstico clínico ➔</string>
+    <string name="bio_imported_from_file_format">Importado desde análisis de archivo: %1$s</string>
+    <string name="file_open_chooser_format">Abrir %1$s con:</string>
+    <string name="th_parameter">Parámetro</string>
+    <string name="th_value">Valor</string>
+    <string name="th_result">Resultado</string>
+    <string name="th_reference">Referencia</string>
+    <string name="th_unit">Unidad</string>
+
+<!-- Automated Hematology Interpretation Strings -->
+    <string name="diag_full_normal">Citometría hemática completa dentro de los parámetros normales de referencia.</string>
+    <string name="diag_microcytic_anemia">Anemia microcítica hipocrómica (sugestiva de deficiencia de hierro)</string>
+    <string name="diag_macrocytic_anemia">Anemia macrocítica (sugestiva de déficit de B12/folato)</string>
+    <string name="diag_normocytic_anemia">Anemia normocítica normocrómica</string>
+    <string name="diag_polyglobulia">Poliglobulia / sospecha de policitemia</string>
+    <string name="diag_leukocytosis_neutrophilia">Leucocitosis con neutrofilia (sugestiva de proceso bacteriano agudo)</string>
+    <string name="diag_leukocytosis_lymphocytosis">Leucocitosis con linfocitosis (sugestiva de infección viral)</string>
+    <string name="diag_leukocytosis_reactive">Leucocitosis reactiva</string>
+    <string name="diag_leukopenia">Leucopenia</string>
+    <string name="diag_thrombocytopenia">Trombocitopenia (%1$s /µL)</string>
+    <string name="diag_thrombocytosis_reactive">Trombocitosis reactiva</string>
+
+<!-- DatabaseHelper Diagnostic Engine Strings -->
+    <string name="diag_db_microcytic">microcítica</string>
+    <string name="diag_db_macrocytic">macrocítica</string>
+    <string name="diag_db_normocytic">normocítica</string>
+    <string name="diag_db_hypochromic">hipocrómica</string>
+    <string name="diag_db_normochromic">normocrómica</string>
+    <string name="diag_db_params_female">parámetros de mujer</string>
+    <string name="diag_db_params_male">parámetros de hombre</string>
+    <string name="diag_db_anemia_format">Anemia %1$s %2$s (%3$s)</string>
+    <string name="diag_db_erythrocytosis">Eritrocitosis / hemoglobina elevada en límite superior</string>
+    <string name="diag_db_leukocytosis_neutrophilia">Leucocitosis con neutrofilia (respuesta reactiva bacteriana / inflamatoria)</string>
+    <string name="diag_db_leukocytosis_lymphocytosis">Leucocitosis con linfocitosis (respuesta reactiva viral)</string>
+    <string name="diag_db_leukocytosis_reactive">Leucocitosis reactiva</string>
+    <string name="diag_db_leukopenia">Leucopenia (defensas inmunológicas disminuidas)</string>
+    <string name="diag_db_thrombocytopenia">Trombocitopenia (plaquetas disminuidas)</string>
+    <string name="diag_db_thrombocytosis">Trombocitosis (plaquetas elevadas)</string>
+    <string name="diag_db_normal_format">Biometría hemática completa en rangos normales de referencia (%1$s).</string>
+
+<!-- Compact Patient Card Chip Strings -->
+    <string name="chip_allergies_zero">Sin alergias</string>
+    <string name="chip_allergies_count">%1$d alergia%2$s</string>
+    <string name="chip_studies_zero">Sin estudios</string>
+    <string name="chip_studies_count">%1$d estudio%2$s</string>
+    <string name="chip_cancer_zero">Sin patologías</string>
+    <string name="chip_cancer_count">%1$d patología%2$s</string>
+</resources>

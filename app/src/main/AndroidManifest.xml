@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="Sistema Clínico"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SistemaClinico"
+        tools:targetApi="31">
+
+        <!-- Main Dashboard -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Hematology Module Activities -->
+        <activity
+            android:name=".ui.hematology.HematologyMenuActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SistemaClinico.Hematology" />
+        <activity
+            android:name=".ui.hematology.HematologySamplesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SistemaClinico.Hematology" />
+        <activity
+            android:name=".ui.hematology.HematologyResultsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SistemaClinico.Hematology" />
+        <activity
+            android:name=".ui.hematology.HematologyDataEntryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SistemaClinico.Hematology" />
+
+        <!-- Clinical Database Module Activities -->
+        <activity
+            android:name=".ui.clinical.ClinicalMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.clinical.ClinicalTablesMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.clinical.PatientDirectoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.clinical.PatientDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.clinical.ClinicalTableViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.clinical.ClinicalRecordInsertActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

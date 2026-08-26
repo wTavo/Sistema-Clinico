@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- ═════════════════════════════════════════════════════════════════════ -->
+    <!-- 1. EXPEDIENTE MÉDICO / CARPETA CLÍNICA (Segundo Plano Izquierda)     -->
+    <!-- ═════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Sombra del Expediente -->
+    <path
+        android:pathData="M32,29 H66 C68.2,29 70,30.8 70,33 V77 C70,79.2 68.2,81 66,81 H32 C29.8,81 28,79.2 28,77 V33 C28,30.8 29.8,29 32,29 Z"
+        android:fillColor="#33000000" />
+
+    <!-- Hoja / Tablilla del Expediente Clínico -->
+    <path
+        android:pathData="M30,27 H64 C66.2,27 68,28.8 68,31 V75 C68,77.2 66.2,79 64,79 H30 C27.8,79 26,77.2 26,75 V31 C26,28.8 27.8,27 30,27 Z"
+        android:fillColor="#F8FAFC" />
+
+    <!-- Borde de la hoja -->
+    <path
+        android:pathData="M30,27 H64 C66.2,27 68,28.8 68,31 V75 C68,77.2 66.2,79 64,79 H30 C27.8,79 26,77.2 26,75 V31 C26,28.8 27.8,27 30,27 Z"
+        android:strokeColor="#E2E8F0"
+        android:strokeWidth="1" />
+
+    <!-- Clip Metálico Superior del Expediente -->
+    <path
+        android:pathData="M40,24 H54 C55.1,24 56,24.9 56,26 V29 H38 V26 C38,24.9 38.9,24 40,24 Z"
+        android:fillColor="#94A3B8" />
+
+    <path
+        android:pathData="M43,26 H51"
+        android:strokeColor="#64748B"
+        android:strokeWidth="1"
+        android:strokeLineCap="round" />
+
+    <!-- Cruz Médica Verde Azulada en el Expediente -->
+    <path
+        android:pathData="M34,35 H38 V39 H42 V43 H38 V47 H34 V43 H30 V39 H34 Z"
+        android:fillColor="#0D9488" />
+
+    <!-- Líneas de Registros / Diagnóstico Clínico en el Expediente -->
+    <path
+        android:pathData="M46,37 H60 M46,42 H58 M32,53 H56 M32,58 H52 M32,63 H48 M32,68 H44"
+        android:strokeColor="#CBD5E1"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round" />
+
+    <!-- ═════════════════════════════════════════════════════════════════════ -->
+    <!-- 2. TUBO DE ENSAYO HEMATOLÓGICO (Frente Derecha con Sangre y Tapón EDTA) -->
+    <!-- ═════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Sombra del Tubo de Muestra -->
+    <path
+        android:pathData="M64,28 H78 C80.2,28 82,29.8 82,32 V68 C82,75.73 75.73,82 68,82 C60.27,82 54,75.73 54,68 V32 C54,29.8 55.8,28 58,28 Z"
+        android:fillColor="#3A000000" />
+
+    <!-- Cuerpo de Vidrio del Tubo de Ensayo -->
+    <path
+        android:pathData="M62,26 H76 C78.2,26 80,27.8 80,30 V66 C80,73.73 73.73,80 66,80 C58.27,80 52,73.73 52,66 V30 C52,27.8 53.8,26 56,26 Z"
+        android:fillColor="#E2E8F0" />
+
+    <path
+        android:pathData="M62,26 H76 C78.2,26 80,27.8 80,30 V66 C80,73.73 73.73,80 66,80 C58.27,80 52,73.73 52,66 V30 C52,27.8 53.8,26 56,26 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.2" />
+
+    <!-- Columna de Sangre Hematológica en el Tubo -->
+    <path
+        android:pathData="M54,44 H78 V66 C78,72.63 72.63,78 66,78 C59.37,78 54,72.63 54,66 V44 Z"
+        android:fillColor="#DC2626" />
+
+    <!-- Menisco Cóncavo Superior de la Sangre -->
+    <path
+        android:pathData="M54,44 Q66,48 78,44"
+        android:strokeColor="#FECDD3"
+        android:strokeWidth="1.5" />
+
+    <!-- Graduaciones de Medición de Laboratorio (ml) -->
+    <path
+        android:pathData="M56,48 H61 M56,54 H64 M56,60 H61 M56,66 H64"
+        android:strokeColor="#99FFFFFF"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round" />
+
+    <!-- Brillo Longitudinal del Cristal del Tubo -->
+    <path
+        android:pathData="M75,34 V68"
+        android:strokeColor="#80FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+    <!-- Tapón Estándar de Biometría Hemática EDTA (Lila/Lavanda Clínico) -->
+    <path
+        android:pathData="M54,23 H78 C79.1,23 80,23.9 80,25 V30 C80,31.1 79.1,32 78,32 H54 C52.9,32 52,31.1 52,30 V25 C52,23.9 52.9,23 54,23 Z"
+        android:fillColor="#8B5CF6" />
+
+    <path
+        android:pathData="M56,23 H76 V25 H56 Z"
+        android:fillColor="#A78BFA" />
+
+    <!-- ═════════════════════════════════════════════════════════════════════ -->
+    <!-- 3. GOTA DE SANGRE VIVA EN PRIMER PLANO (Unión Laboratorio + Paciente)-->
+    <!-- ═════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Gota de Sangre Central -->
+    <path
+        android:pathData="M48,46 C48,46 56,57 56,63 C56,67.42 52.42,71 48,71 C43.58,71 40,67.42 40,63 C40,57 48,46 48,46 Z"
+        android:fillColor="#EF4444" />
+
+    <!-- Borde Blanco Fino para Separación de Capas -->
+    <path
+        android:pathData="M48,46 C48,46 56,57 56,63 C56,67.42 52.42,71 48,71 C43.58,71 40,67.42 40,63 C40,57 48,46 48,46 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+
+    <!-- Brillo Cristalino en la Gota -->
+    <path
+        android:pathData="M44,58 C43.5,60 43.8,63.5 45.5,65.5"
+        android:strokeColor="#E6FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+</vector>

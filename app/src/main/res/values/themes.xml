@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SistemaClinico" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_teal</item>
+        <item name="colorPrimaryVariant">@color/primary_teal_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_crimson</item>
+        <item name="colorSecondaryVariant">@color/secondary_crimson_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar and background. -->
+        <item name="android:statusBarColor">@color/primary_teal_dark</item>
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+
+    <!-- Hematology module theme (Crimson status bar matching the header) -->
+    <style name="Theme.SistemaClinico.Hematology" parent="Theme.SistemaClinico">
+        <item name="colorPrimary">@color/secondary_crimson</item>
+        <item name="colorPrimaryVariant">@color/secondary_crimson_dark</item>
+        <item name="android:statusBarColor">@color/secondary_crimson_dark</item>
+    </style>
+</resources>

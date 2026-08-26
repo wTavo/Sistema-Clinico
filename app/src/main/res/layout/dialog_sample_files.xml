@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:strokeColor="@color/stroke_border"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_circle_teal">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_table"
+                    app:tint="@color/white" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descargar Archivos de Ejemplo"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16.5sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Elige el formato de archivo que deseas descargar"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12.5sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/stroke_border" />
+
+        <ScrollView
+            android:id="@+id/dialogScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- ══ OPCIÓN 1: ARCHIVO CSV (EXCEL) ══ -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    app:cardBackgroundColor="@color/background_light"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/stroke_border"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Opción 1: Archivo CSV (Para Excel)"
+                            android:textColor="@color/secondary_crimson"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Archivo: ejemplo_citometria.csv"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+
+                        <!-- Tabla visual de columnas del formato propuesto -->
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/white"
+                            android:padding="4dp">
+
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TableRow
+                                    android:background="@color/primary_teal"
+                                    android:paddingVertical="6dp">
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="Folio"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="Fecha"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="RBC"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="Hb"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="Hct"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="WBC"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="Neut"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="Linf"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="PLT"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:background="@color/white"
+                                    android:paddingVertical="6dp">
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="LAB-001"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="25/08/2026"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="4.80"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="14.2"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="42.6"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="6.80"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="60.0"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="30.0"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:paddingHorizontal="6dp"
+                                        android:text="250000"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="11sp" />
+                                </TableRow>
+                            </TableLayout>
+                        </HorizontalScrollView>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDownloadCsv"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:text="Descargar archivo .CSV"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@color/secondary_crimson"
+                            app:cornerRadius="8dp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ══ OPCIÓN 2: ARCHIVO TXT (BLOC DE NOTAS) ══ -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/background_light"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/stroke_border"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Opción 2: Archivo TXT (Para Bloc de Notas)"
+                            android:textColor="@color/tertiary_blue"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Archivo: ejemplo_citometria.txt"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+
+                        <!-- Formato línea por línea propuesto -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/white"
+                            android:fontFamily="monospace"
+                            android:lineSpacingExtra="2dp"
+                            android:padding="10dp"
+                            android:text="FOLIO = LAB-TXT-02\nFECHA = 25/08/2026\nRBC = 4.80\nHB = 14.2\nHCT = 42.6\nWBC = 6.80\nNEUT = 60.0\nLINF = 30.0\nPLT = 250000"
+                            android:textColor="@color/text_primary"
+                            android:textSize="11.5sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDownloadTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:text="Descargar archivo .TXT"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@color/tertiary_blue"
+                            app:cornerRadius="8dp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Botón Cerrar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSamplesClose"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:text="Cerrar"
+            android:textColor="@color/white"
+            android:textSize="13.5sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primary_teal"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical"
+    tools:context=".ui.clinical.ClinicalRecordInsertActivity">
+
+    <!-- 1. Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_teal"
+        app:navigationContentDescription="@string/nav_back"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="@color/white"
+        app:title="@string/insert_title"
+        app:titleTextColor="@color/white" />
+
+    <!-- 2. Selector de Catálogos a Registrar -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="6dp"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupCatalogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            app:checkedChip="@+id/chipPatient"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPatient"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_patient" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAllergy"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_allergy" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCancer"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_cancer" />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- Línea divisoria -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/stroke_border" />
+
+    <!-- 3. Contenedor de Formularios -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/containerForms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Formulario 1: Alta de Paciente (Por defecto) -->
+            <include
+                android:id="@+id/includePatientForm"
+                layout="@layout/form_insert_patient" />
+
+            <!-- Formulario 2: Alta de Alergia (ViewStub diferido) -->
+            <ViewStub
+                android:id="@+id/stubAllergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/form_insert_allergy" />
+
+            <!-- Formulario 3: Alta de Cáncer/Neoplasia (ViewStub diferido) -->
+            <ViewStub
+                android:id="@+id/stubCancer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/form_insert_cancer" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
